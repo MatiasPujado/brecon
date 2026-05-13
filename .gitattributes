@@ -1,0 +1,47 @@
+* text=auto eol=lf
+* working-tree-encoding=UTF-8
+
+# Java files
+*.java          eol=lf
+
+# Spring Boot configuration files
+*.yml           eol=lf
+*.yaml          eol=lf
+*.properties    eol=lf
+
+# Build and dependency files
+*.xml           eol=lf
+*.gradle        eol=lf
+*.gradle.kts    eol=lf
+*.toml          eol=lf
+*.md            eol=lf
+
+# Git and CI/CD related files
+*.gitignore     eol=lf
+*.gitattributes eol=lf
+*.env           eol=lf
+*.sh            eol=lf
+*.bat           eol=lf
+
+# Text files
+*.txt           eol=lf
+*.md            eol=lf
+*.adoc          eol=lf
+
+# Json files and other configurations
+*.json          eol=lf
+*.log           eol=lf
+*.sql           eol=lf
+*.csv           eol=lf
+
+# HTML, CSS, JS files, y web resources
+*.html          eol=lf
+*.css           eol=lf
+*.js            eol=lf
+
+# Other files
+*.kt            eol=lf
+*.jsp           eol=lf
+
+# Systemd service files
+*.service       eol=lf

@@ -26,7 +26,7 @@ amass enum -passive -d $TARGET >> $DIR.txt &&
 gobuster dns -d $TARGET -w ../all.txt -t 100 --no-color -o gobuster_"$DIR".txt &&
 cat gobuster_"$DIR".txt | sed 's@.* @@' >> $DIR.txt && rm gobuster_"$DIR".txt &&
 python3 ../censys-subdomain-finder/censys-subdomain-finder.py $TARGET | sed -e 's/[ -]//g' >> $DIR.txt &&
-# Agregar permutaciones.
+alterx -l "$DIR".txt -enrich -silent | dnsx -silent >> "$DIR".txt &&
 sort -u "$DIR".txt > "$DIR"_sanitized.txt &&
 httpx -l "$DIR"_sanitized.txt -sc | tee -a all_subs_"$DIR".txt &&
 cat all_subs_"$DIR".txt | grep 404 | cut -d " " -f 1 > 404_"$DIR".txt &&

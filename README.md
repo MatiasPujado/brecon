@@ -6,48 +6,57 @@ It categorizes files based on their response status code, making it easier to ha
 ### Requirements
 Install httpx
 
-    go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest
+    `go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest`
     
 Install amass
 
-    go install -v github.com/OWASP/Amass/v3/...@master
+    `go install -v github.com/OWASP/Amass/v3/...@master
 
 Install assetfinder
 
-    https://github.com/tomnomnom/assetfinder
+    `https://github.com/tomnomnom/assetfinder`
 
 Install censys-subdomain-finder
 
-    https://github.com/christophetd/censys-subdomain-finder
+    `https://github.com/christophetd/censys-subdomain-finder`
 
 Install gobuster
 
-    go install github.com/OJ/gobuster/v3@latest
+    `go install github.com/OJ/gobuster/v3@latest`
 
 In the same brecon directory, clone the wordlist for gobuster:
 
-    For example: wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt 
+```
+    #For example:
+    wget https://gist.githubusercontent.com/jhaddix/86a06c5dc309d08580a018c66354a056/raw/96f4e51d96b2203f19f6381c8c545b278eaa0837/all.txt
+```
 
 Install gowitness
 
-    go install github.com/sensepost/gowitness@latest
+    `go install github.com/sensepost/gowitness@latest`
 
+Install alterx
 
+    `go install github.com/projectdiscovery/alterx/cmd/alterx@latest`
+
+Install dnsx
+
+    `go install -v github.com/projectdiscovery/dnsx/cmd/dnsx@latest`
 
 ### It's easy!
 
 Clone the repo, give it execute permissions and run the script!
 
+```
     git clone https://github.com/bronxi47/brecon.git
     
     chmod +x brecon.sh
-    
+```
     
 Usage:
 
-    ./brecon [URL] [DIRECTORY-NAME]
+    `./brecon [URL] [DIRECTORY-NAME]`
 
 For example:
 
-    ./brecon example.com example_web
-
+    `./brecon example.com example_web`
